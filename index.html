@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw board</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <h1>Etch-a-Sketch</h1>
+    <div class="container">
+        <div class="canva" id="canvas"></div>
+        <div class="toolbox">
+            <h2>Pick Color</h2>
+            <input type="color" name="colorpicker" id="color" >
+            <div id="button-row">
+                <button type="button" id="eraser" onclick="setColor('white')">Eraser</button>
+                <button type="button" id="reset" onclick="resetBoard()">Reset</button>
+            </div>
+            <div class="labelRange">
+                <label for="size">16x16</label>
+                <input type="range" name="size" id="canvasSize" min="16" max="100" class="size" > 
+            </div>
+        </div>
+        
+    </div>
+    
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
