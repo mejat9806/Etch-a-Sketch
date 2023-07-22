@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded",function(){
 })
  let sizeChange =document.getElementById("canvasSize")
 
- sizeChange.addEventListener("mouseup",function(){
+ sizeChange.addEventListener("change",function(){
     
     size = sizeChange.value
     console.log(size)
@@ -35,9 +35,9 @@ function canvasSize(size){
 } 
 
 
-function divdiv(size) {
+function divdiv(sizeChange) {
     
-    let numDiv = size*size
+    let numDiv = sizeChange*sizeChange
 
     for (let i = 0;i<numDiv;i++){
         const divs= document.createElement('div')

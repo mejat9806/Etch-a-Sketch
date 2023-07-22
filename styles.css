@@ -10,8 +10,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 100vw;
+   
     background-color: #bde0fe;
 }
 
@@ -102,3 +101,38 @@ h2{
 .labelRange{
     text-align: center;
 }
+
+/* For desktop: */
+
+
+@media all and (max-width: 1024px) {
+    body{
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 800px) and (max-width: 1024px) {
+    body{
+       margin: 0 auto;
+       width: 100px;
+       
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .toolbox{
+        display: flex;
+        flex-direction: row;
+    }
+    h1{
+        font-size: 70px;
+        width: 1000px;
+    }
+    #canvas{
+        width: 800px;
+        height: 800px;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 780px) {here is your css code}
